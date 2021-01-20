@@ -13,8 +13,8 @@ class DepositController extends Controller
     protected $transaction_url_1 = 'https://easypaystg.easypaisa.com.pk/easypay/Index.jsf';
     protected $transaction_url_2 = 'https://easypaystg.easypaisa.com.pk/easypay/Confirm.jsf';
     
-    protected $storeId = '11573';
-    protected $hashKey = 'YS8399Z0C7SUT3PM';
+    protected $storeId = '11111'; // Your store Id provided by Easypaisa merchant account
+    protected $hashKey = 'XXXXXXXXXXXXXXXX'; // hashKey generated from Easypaisa merchant account portal
     
     // This function will render view of checkout form
     public function checkoutIndex($uid, $transactionId, $mobileNo)
