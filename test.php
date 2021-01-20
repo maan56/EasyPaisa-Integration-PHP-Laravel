@@ -17,7 +17,7 @@ class DepositController extends Controller
     protected $hashKey = 'YS8399Z0C7SUT3PM';
     
     // This function will render view of checkout form
-    public function checkoutIndex()
+    public function checkoutIndex($uid, $transactionId, $mobileNo)
     {
       return Inertia::render('Checkout/index', [
             'uid' => $uid,
